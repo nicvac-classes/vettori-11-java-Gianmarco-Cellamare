@@ -8,18 +8,32 @@ class Esercizio {
     // Il programma parte con una chiamata a main().
     public static void main(String args[])
     {
-        //Variabili del programma
-        String nome;
-
-        //Creo l'oggetto in per l'input da tastiera
         Scanner in = new Scanner( System.in );
+        int N;
+        int i;
+        System.out.print("Inserisci il numero di cifre" );
+        N = in.nextInt();
+        i=0;
+        Int [] U[] = next.Int(N);
+        Int [] R[] = next.Int(N);
+        Int [] S[] = next.Int(N);
+        Int [] M[] = next.Int(N);
 
-        //Leggo l'input da tastiera
-        System.out.print("Inserisci il tuo nome: ");
-        nome = in.nextLine();
-
-        //Output del nome acquisito da tastiera
-        System.out.println("Ciao "+nome+"!");
+        while (i<N) {
+            do {
+                System.out.println("Inserisci " +i+1+ " numero");
+                U[i]=in.nextInt();
+            }while (U[i] < 0);
+            R[i]=random(11);
+            System.out.println("R[" +i+1+ "]:" +R[i]);
+            S[i]=random(8-3+1)+3;
+            System.out.println("S[" +i+1+ "]:" +S[i]);
+            M[i]=U[i]+R[i]+S[i];
+            System.out.println("M[" +i+1+ "]:" +M[i]);
+        }
+        int T;
+        System.out.print("Inserisco un numero intero" );
+        T=in.nextInt();
     }
 }
 
